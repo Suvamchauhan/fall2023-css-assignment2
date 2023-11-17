@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Page with Bootstrap Components</title>
+  <!-- Link Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    .carousel-item img {
+      height: 500px; /* Adjust carousel image height */
+      object-fit: cover;
+    }
+    .accordion-item {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">BookPage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Author</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Literature My Dreams.jpg" class="d-block w-100" alt="Book 1">
+      </div>
+      <div class="carousel-item">
+        <img src="./MunaMadan-image.jpg" class="d-block w-100" alt="Book 2">
+      </div>
+      <div class="carousel-item">
+        <img src="./The_Witch_Doctor.jpg" class="d-block w-100" alt="Book 3">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+    <!-- Book Reviews -->
+    <section class="book-reviews">
+      <div class="container mt-5">
+          <section>
+              <h4 class="mb-4 pt-5">Book Reviews</h4>
+              <div class="row pb-5">
+
+                  <!-- Review 1 -->
+                  <div class="col-md-4 mb-3">
+                      <article class="card">
+                          <div class="card-body">
+                              <h5 class="card-title">s.penkevich</h5>
+                              <p class="card-text"> If the whimsy for a magical adventure oozing with charm and
+                                  full of
+                                  unforgettable characters ever strikes you, might I direct your attention to the
+                                  Diana Wynne Jones’ endlessly entertaining Howl’s..</p>
+                              <a style="color: #84c0b8;" href="#">Show More</a>
+                          </div> <!-- .card-body -->
+                      </article>
+                  </div> <!-- .col-md-4 mb-3 -->
+
+                  <!-- Review 2 -->
+                  <div class="col-md-4 mb-3">
+                      <article class="card">
+                          <div class="card-body">
+                              <h5 class="card-title">Kat Kennedy</h5>
+                              <p class="card-text">For some reason I've been reading a lot of really great books
+                                  lately. I feel that itch to find something I can tear apart and relish in the
+                                  destruction. However, Howl's Moving Castle...</p>
+                              <a style="color: #84c0b8;" href="#">Show More</a>
+                          </div> <!-- .card-body -->
+                      </article>
+                  </div> <!-- .col-md-4 mb-3 -->
+
+                  <!-- Review 3 -->
+                  <div class="col-md-4 mb-3">
+                      <article class="card">
+                          <div class="card-body">
+                              <h5 class="card-title">Nataliya</h5>
+                              <p class="card-text">The first time I read this book was on a tiny phone screen in
+                                  the scattered quiet minutes of a night shifts week. I loved it so much - I
+                                  thought maybe partially because of sleep deprivation...
+                              </p>
+                              <a style="color: #84c0b8;" href="#">Show More</a>
+                          </div> <!-- .card-body -->
+                      </article>
+                  </div> <!-- .col-md-4 mb-3 -->
+              </div> <!-- .row -->
+          </section>
+      </div> <!-- .container mt-5 -->
+  </section>
+
+  <!-- Accordion - Table of Contents -->
+  <div class="accordion mt-4" id="accordionExample">
+    <div class="card accordion-item">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Table of Contents
+          </button>
+        </h2>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <!-- Table of contents items -->
+          <ul>
+            <li><a href="#chapter1">Chapter 1</a></li>
+            <li><a href="#chapter2">Chapter 2</a></li>
+            <li><a href="#chapter3">Chapter 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab Panel - Publisher's Data -->
+  <div class="mt-4">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="publisher-tab" data-toggle="tab" href="#publisher" role="tab" aria-controls="publisher" aria-selected="true">Publisher</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="false">Sales Info</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="publisher" role="tabpanel" aria-labelledby="publisher-tab">
+        <!-- Publisher's data goes here -->
+        <p>Publisher information...</p>
+      </div>
+      <div class="tab-pane fade" id="sales" role="tabpanel" aria-labelledby="sales-tab">
+        <!-- Sales information goes here -->
+        <p>Sales details...</p>
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <!-- Contact information goes here -->
+        <p>Contact details...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Link Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

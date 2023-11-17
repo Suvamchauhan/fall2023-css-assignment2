@@ -1,0 +1,29 @@
+/* styles.css */
+
+/* Example styles for the book landing page */
+
+/* Custom styles for book cover and author image */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Styles for reviews section */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styles for Buy Now form */
+form {
+    max-width: 400px;
+}
+
+/* Publisher's Information - Tab Panel */
+.tab-pane {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
