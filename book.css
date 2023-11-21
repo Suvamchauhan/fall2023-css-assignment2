@@ -1,86 +1,91 @@
-
-body{
-    background-color: #CBD18F;
-    
+/* Body styles */
+body {
+  background-color: #CBD18F;
+  font-family: 'Inclusive Sans', sans-serif;
 }
 
-p{
-    text-align: justify;
+/* Paragraph styles */
+p {
+  text-align: justify;
+  font-family: 'Kanit', sans-serif;
 }
 
-  .navbar-expand-lg{
-    background-color: #f7faf8;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 15px;
-    margin-top: auto;
-    
-  }
-  
- 
-  .navbar-brand  {
-    color: #ff5e57;
-    font-style: italic;
-    font-size: 30px;
-    text-transform: capitalize;
-  }
-
-  #myFooter {
-    /*  CSS styles for footer */
-   
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px; 
-    margin-block-end: 10px;
-    text-align: center;  
+/* Navbar styles */
+.navbar-expand-lg {
+  background-color: #f7faf8;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Inclusive Sans', sans-serif;
+  padding: 15px;
+  margin-top: auto;
 }
 
-aside{
-    padding: 10px;
+/* Navbar brand styles */
+.navbar-brand {
+  color: #3c40c6;
+  font-style: italic;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: 'Inclusive Sans', sans-serif;
 }
 
+/* Footer styles */
+#myFooter {
+  font-family: 'Inclusive Sans', sans-serif;
+  font-size: 20px;
+  margin-block-end: 10px;
+  text-align: center;
+}
+
+/* Aside styles */
+aside {
+  padding: 10px;
+}
+
+/* Heading styles */
 h2, h4 {
-    color: #ff5e57;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+  color: #ff6b6b;
+  font-family: 'Inclusive Sans', sans-serif;
 }
 
-h4{
-    font-size: 25px;
+/* Heading 4 styles */
+h4 {
+  font-size: 25px;
 }
 
-h2{
-    font-size: 35px;
-    font-style: italic;
-    /* text-transform: capitalize; */
+/* Heading 2 styles */
+h2 {
+  font-size: 34px;
 }
 
-
-.col-lg-4{
-    padding: 50px;
+/* Column styles */
+.col-lg-4 {
+  padding-bottom: 30px;
 }
 
+/* Special heading styles */
 .special-heading {
-    color: #3c40c6; /* Change this to your desired color */
-  }
-
-  
-  .accordion{
-    width: 550px;
-  }
-
-
-.btn-primary{
-    margin-bottom: 20px;
+  color: #3c40c6;
 }
 
-.img-fluid{
- margin: 2px;
- height: 60%;
+/* Accordion styles */
+.accordion {
+  width: 550px;
 }
 
+/* Primary button styles */
+.btn-primary {
+  margin-bottom: 30px;
+}
 
+/* Image fluid styles */
+.img-fluid {
+  margin: 2px;
+  height: 60%;
+}
+
+/* Padding top 5 styles */
 .pt-5 {
-    padding-top: 0rem !important;
-  }
-
+  padding-top: 0rem !important;
+}
